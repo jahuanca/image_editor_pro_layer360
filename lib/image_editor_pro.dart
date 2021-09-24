@@ -355,7 +355,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                               // raise the [showDialog] widget
                               showDialog(
                                   context: context,
-                                  child: AlertDialog(
+                                  builder: (_) => AlertDialog(
                                     title: const Text('Elije un color'),
                                     content: SingleChildScrollView(
                                       child: ColorPicker(
